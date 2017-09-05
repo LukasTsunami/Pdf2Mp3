@@ -1,0 +1,8 @@
+npm i tesseract.js
+npm i node-tesseract
+npm i simple-tts
+npm i tesseract-ocr
+npm i pdf2image
+export TESSDATA_PREFIX=/usr/share/tesseract-ocr/
+
+
