@@ -1,8 +1,26 @@
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+nvm install node --version
 npm i tesseract.js
 npm i node-tesseract
 npm i simple-tts
 npm i tesseract-ocr
+npm i imagemagick
+npm i pdfinfo
 npm i pdf2image
+npm i lame
+sudo apt-get install tesseract-ocr
+sudo apt-get install lame
 export TESSDATA_PREFIX=/usr/share/tesseract-ocr/
+git clone https://github.com/LukasTsunami/Pdf2Mp3.git
+renomear para uma palavra não composta (nao pode ter espacos,tracos,underlines ou numeros): exemplo de nome permissivel: projeto
+cd projeto
+node index.js
 
+OBS: o arquivo test.pdf deve estar na mesma pasta
+
+OBS2: se quiser passar parâmetros:
+   - PRIMEIRO: nome do arquivo de entrada na mesma pasta 
+   - SEGUNDO : nome padrao do arquivo de saida na mesma pasta
 
